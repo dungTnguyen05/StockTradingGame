@@ -1,0 +1,35 @@
+Test case 1:
+- money = 10000
+- stock_value = 100
+- stock_owned = 0
+
+=> stock is predicted to decrease by 4% (accuracy: 59%) => buy 101 (invalid) => buy 10
+=> money = 9000.00
+=> stock_owned = 10
+=> expected total money = 9960.00 or 10040.00
+=> actual total money = 10040.00 (stock_value = 104.00)
+=> run as expected
+
+Test case 2:
+- money = 10000
+- stock_value = 100
+- stock_owned = 0
+
+=> stock is predicted to decrease by 6% (accuracy: 77%) => buy 20
+=> money = 8000.00
+=> stock_owned = 20
+=> expected total money = 9880.00 or 10120.00 
+=> actual total money = 9880.00 (stock_value = 94.00)
+=> run as expected
+
+Test case 3:
+- money = 10000
+- stock_price = 100
+- stock owned = 0
+
+=> stock is predicted to increase by 2% (accuracy: 27%) => buy 200 (invalid) => buy 15
+=> money = 8500.00
+=> stock_owned = 15
+=> expected total money = 9970.00 or 10030.00
+=> actual total money = 9970.00 (stock_value = 98.00)
+=> run as expected

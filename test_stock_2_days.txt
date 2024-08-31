@@ -1,0 +1,53 @@
+Test case 1:
+- money = 10000
+- stock_value = 100
+- stock_owned = 0
+
+=> stock is predicted to increase by 3% (accuracy: 44%) => buy 20 
+=> money = 8000.00
+=> stock_owned = 20
+=> after a day: stock_value = 97.00 
+
+=> stock is predicted to increase by 5% (accuracy: 63%) => buy 20 => sell 10
+=> money = 7030.00
+=> stock_owned = 30
+=> after a day: stock_value = 101.85
+
+=> total money = 10085.5
+=> run as expected
+
+Test case 2:
+- money = 10000
+- stock_value = 100
+- stock_owned = 0
+
+=> stock is predicted to decrease by 3% (accuracy: 39%) => buy 20 
+=> money = 8000.00
+=> stock_owned = 20
+=> after a day: stock_value = 103.00 
+
+=> stock is predicted to increase by 1% (accuracy: 36%) => no buy => sell 20
+=> money = 10060.00
+=> stock_owned = 0
+=> after a day: stock_value = 101.97
+
+=> total money = 10060.00
+=> run as expected
+
+Test case 3: 
+- money = 10000
+- stock_value = 100
+- stock_owned = 0
+
+=> stock is predicted to decrease by 8% (accuracy: 64%) => no buy
+=> money = 10000.00
+=> stock_owned = 0
+=> after a day: stock_value = 92.00 
+
+=> stock is predicted to decrease by 2% (accuracy: 47%) => buy 50 => sell 50
+=> money = 1000.00
+=> stock_owned = 0
+=> after a day: stock_value = 93.84
+
+=> total money = 10000.00
+=> run as expected
