@@ -1,0 +1,4 @@
+Development stages:
+- Stage 1: trading stock on only 1 stock type and in 1 day
+- Stage 2: trading stock on only 1 stock type and in 2 days (or more days: the difference of 1 day vs >= 2 days is that, from day 2th, users can also sell stocks)
+- Stage 3 (final): trading stock on 5 stock types and in 7 days
